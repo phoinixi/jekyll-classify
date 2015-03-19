@@ -1,6 +1,5 @@
 # Jekyll Tags and Categories Pages Generator
 
------
 
 **Tags** and **Categories** pages and generator for Jekyll.
 
