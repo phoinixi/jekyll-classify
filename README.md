@@ -27,7 +27,7 @@ It creates an html page for each tag and category with the posts that belongs to
 	- categories_folder: "/categories/"
 	- tags_folder: "/categories/"
 	
-	Or just choose the name you like according with the `categories.html` and `tags.html` 	files and the point 3.
+	Or just choose the name you like according with the `_layout/categories.html` and `_layout/tags.html` files.
 	
 3. Use the following code to list your tags categories links to navigate in the tags and categories pages:
 
