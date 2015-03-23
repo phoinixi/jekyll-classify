@@ -39,3 +39,7 @@ It creates an html page for each tag and category with the posts that belongs to
 		{% for tag in page.tags %}
 			<a href="{{ site.tags_folder }}{{ tag | replace: ' ','-'  }}.html">#{{tag}}</a>
 		{% endfor %}
+
+---
+
+**It works with any version of jekyll**
