@@ -30,6 +30,7 @@ It creates an html page for each tag and category with the posts that belongs to
 		{% endfor %}
 	
 4. Use the following code to list your tags categories links to navigate in the tags and categories pages:
+
 		{% for tag in page.tags %}
                     <a href="/tags/{{ tag | replace: ' ','-' }}.html">#{{ tag }}</a>
                 {% endfor %}
