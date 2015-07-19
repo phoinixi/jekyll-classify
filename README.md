@@ -12,9 +12,6 @@ It creates an html page for each tag and category with the posts that belongs to
 - _plugins/
 	- categories.rb
 	- tags.rb
-- _layout/
-	- categories.html
-	- tags.html
 
 ---
 
@@ -22,23 +19,24 @@ It creates an html page for each tag and category with the posts that belongs to
 
 1. Create `/categories/` and `/tags/` folders in the root of your jekyll project 
 
-2. Add the following variables to the `_config.yml` file
+3. Use the following code to create a layout for each category page:
 
-	- categories_folder: "/categories/"
-	- tags_folder: "/categories/"
-	
-	Or just choose the name you like according with the `_layout/categories.html` and `_layout/tags.html` files.
-	
-3. Use the following code to list your tags categories links to navigate in the tags and categories pages:
-
-		{% for cat in post.categories %}
-        	<a href="{{ site.categories_folder }}{{ cat | replace: ' ','-' }}.html">{{cat}}</a>
+		{% for post in site.tags[page.tag] %}
+  			..........
 		{% endfor %}
 
-
+		{% for post in site.tags[page.category] %}
+        		..........
+		{% endfor %}
+	
+4. Use the following code to list your tags categories links to navigate in the tags and categories pages:
 		{% for tag in page.tags %}
-			<a href="{{ site.tags_folder }}{{ tag | replace: ' ','-'  }}.html">#{{tag}}</a>
-		{% endfor %}
+                    <a href="/tags/{{ tag | replace: ' ','-' }}.html">#{{ tag }}</a>
+                {% endfor %}
+
+		{% for tag in page.categories %}
+                    <a href="/categories/{{ tag | replace: ' ','-' }}.html">#{{ category }}</a>
+                {% endfor %}
 
 ---
 
