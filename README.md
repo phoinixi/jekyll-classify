@@ -5,6 +5,11 @@
 
 It creates an html page for each tag and category with the posts that belongs to it.
 
+[DEMO](http://francescoes.com/tags/interview-questions.html) (my personal website)
+Navigate into tags and see how it works
+
+
+
 ---
 
 ### Structure
@@ -19,7 +24,9 @@ It creates an html page for each tag and category with the posts that belongs to
 
 1. Create `/categories/` and `/tags/` folders in the root of your jekyll project 
 
-3. Use the following code to create a layout for each category page:
+2. Copy the content of  `/_plugin/` in your plugin directory (create it if you don't have it)
+
+3. Use the following code to list all the post that belongs to a tag/category:
 
 		{% for post in site.tags[page.tag] %}
   			..........
