@@ -8,6 +8,9 @@ jekyll-classify is a Jekyll plugin that helps to classify your jekyll posts. It 
 
 [DEMO](http://francescoes.com/jekyll-classify-demo/) 
 
+
+Inspiration: [https://github.com/brousalis/jekyll-category-list]() then improved with categories pages.
+
 ---
 
 # Structure
@@ -65,6 +68,11 @@ It is possible to override the following variables in the `_config.yml`:
 	# default values
 	site.tag_dir = 'tags'		# /tags/ as tag pages directory
 	site.tag_layout = 'tags'	# _layout/tags.html as tag page layout 
+
+
+# Contributing 
+
+Feel free to contribute or use the code, give me advice on my code, open issue or feature request. Cheers!
 
 
 # License
