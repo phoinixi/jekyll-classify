@@ -3,11 +3,10 @@
 by Francesco Esposito [http://francescoes.com]() || <fraesps@gmail.com>
 
 
-
 jekyll-classify is a Jekyll plugin that helps to classify your jekyll posts. It generates tags and categories pages and to add custom Liquid Tag for listing categories and tags. 
 
 
-
+[DEMO](http://francescoes.com/jekyll-classify-demo/) 
 
 ---
 
@@ -24,6 +23,7 @@ jekyll-classify is a Jekyll plugin that helps to classify your jekyll posts. It 
 ### Categories/Tags links
 
 Add `categories.rb` and `tags.rb` to you `_plugins` directory (or the one that you like to use). 
+
 
 - To list all the categories links use the **helper**:
 
@@ -43,13 +43,11 @@ The pages will be generated **automatically** in your `_site` directory based on
 
 In the **Category Layout:** add the following to list all the post.
 
-
 		{% for post in site.categories[page.category] %}
 			# post properties
 		{% endfor %}
-----		
-In the **Tag Layout:** add the following to list all the post.
 
+In the **Tag Layout:** add the following to list all the post.
 
 		{% for post in site.tags[page.tag] %}
 			# post properties
@@ -61,7 +59,7 @@ In the **Tag Layout:** add the following to list all the post.
 It is possible to override the following variables in the `_config.yml`:
 	
 	# default values
-	site.category_dir = 'categories'		# /categories/ as category pages directory
+	site.category_dir = 'categories'	# /categories/ as category pages directory
 	site.category_layout = 'categories'	# _layout/categories.html as category page layout 
 
 	# default values
