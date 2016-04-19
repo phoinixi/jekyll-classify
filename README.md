@@ -6,7 +6,7 @@ by Francesco Esposito [http://francescoes.com](http://francescoes.com) || <fraes
 jekyll-classify is a Jekyll plugin that helps to classify your jekyll posts. It generates tags and categories pages and to add custom Liquid Tag for listing categories and tags. 
 
 
-[DEMO](http://francescoes.com/jekyll-classify-demo/) 
+[DEMO](http://fran.cesco.io/jekyll-classify-demo/) 
 
 
 Inspiration: [https://github.com/brousalis/jekyll-category-list]() then improved with categories pages.
