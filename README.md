@@ -1,27 +1,14 @@
-# jekyll-classify
-
-by Francesco Esposito [http://fran.cesco.io](http://fran.cesco.io) || <fran@cesco.io>
-
+## jekyll-classify
 
 jekyll-classify is a Jekyll plugin that helps to classify your jekyll posts. It generates tags and categories pages and to add custom Liquid Tag for listing categories and tags. 
 
-
 [DEMO](http://fran.cesco.io/jekyll-classify-demo/) 
-
 
 Inspiration: [https://github.com/brousalis/jekyll-category-list]() then improved with categories pages.
 
 ---
 
-# Structure
-
-- _plugins/
-	- categories.rb - *generate the category pages and the 'list-categories' Liquid Tag*
-	- tags.rb - *generate the tags pages and the 'list-tags' Liquid Tag*
-
----
-
-# Usage
+## Usage
 
 ### Categories/Tags links
 
@@ -36,7 +23,8 @@ Add `categories.rb` and `tags.rb` to you `_plugins` directory (or the one that y
 	
 		{% list_tags %}
 
-The previous Liquid Tag will generate an unordered list with class `list-categories` (and `list-tags`). Each `a` tag will have a `data-num-of-posts` attribute with the number of posts associated with the correspongind `category` (or `tag`). 
+The previous Liquid Tag will generate an unordered list with class `list-categories` (and `list-tags`). 
+Each `a` tag will have a `data-num-of-posts` attribute with the number of posts associated with the correspongind `category` (or `tag`). 
 
 ### Categories/Tags layouts
 		
@@ -57,7 +45,7 @@ In the **Tag Layout:** add the following to list all the post.
 		{% endfor %}
 			
 
-# Optional configuration
+## Optional configuration
 
 It is possible to override the following variables in the `_config.yml`:
 	
@@ -70,12 +58,12 @@ It is possible to override the following variables in the `_config.yml`:
 	site.tag_layout = 'tags'	# _layout/tags.html as tag page layout 
 
 
-# Contributing 
+## Contributing 
 
 Feel free to contribute or use the code, give me advice on my code, open issue or feature request. Cheers!
 
 
-# License
+## License
 
 ##MIT licensed
 
